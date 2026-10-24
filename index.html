@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="一页诗：在山水与月色之间，读一首古诗。精选八首经典诗作，静静读，慢慢想。">
+  <meta name="color-scheme" content="light">
+  <title>一页诗 · 把日子读成诗</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#collection">跳到诗集</a>
+  <header class="site-header wrap">
+    <a class="brand" href="./" aria-label="一页诗首页"><span class="seal" aria-hidden="true">诗</span><span>一页诗</span></a>
+    <a class="nav-link" href="#collection">读诗集 <span aria-hidden="true">↗</span></a>
+  </header>
+  <main>
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> 山水有意，诗里相逢</p>
+        <h1 id="hero-title">把日子<br>读成<span class="accent">诗。</span></h1>
+        <p class="intro">从匆忙里借一点闲，<br>在古人的字里行间，看山、听雨、望月。</p>
+        <a class="primary-link" href="#collection">寻一首喜欢的诗 <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="landscape" role="img" aria-label="一轮朱红的落日，映着层叠的青灰色远山与小舟">
+        <svg viewBox="0 0 600 520" aria-hidden="true">
+          <defs>
+            <linearGradient id="far" x2="0" y2="1"><stop stop-color="#b4c0b7"/><stop offset="1" stop-color="#e1e3d8"/></linearGradient>
+            <linearGradient id="near" x2="0" y2="1"><stop stop-color="#526f65"/><stop offset="1" stop-color="#aab6a5"/></linearGradient>
+          </defs>
+          <circle cx="390" cy="125" r="48" fill="#b85b40" opacity=".86"/>
+          <path d="M0 330 Q65 302 100 245 Q130 200 161 240 Q199 286 231 214 Q271 123 300 193 Q320 246 357 211 Q391 175 419 236 Q470 294 510 228 Q555 166 600 246 L600 475 L0 475Z" fill="url(#far)"/>
+          <path d="M0 369 Q72 324 113 337 Q150 346 189 306 Q247 247 280 304 Q303 349 345 320 Q378 285 423 333 Q465 366 516 310 Q560 275 600 308 L600 476 L0 476Z" fill="#93a496" opacity=".68"/>
+          <path d="M0 402 Q52 391 81 358 Q123 313 160 374 Q190 415 246 372 Q284 335 324 380 Q361 421 400 395 Q466 347 500 386 Q552 423 600 366 L600 483 L0 483Z" fill="url(#near)"/>
+          <path d="M0 457 Q120 429 220 454 T432 452 T600 457 L600 520 L0 520Z" fill="#eeece0"/>
+          <g stroke="#84968b" fill="none" stroke-width="1" opacity=".6"><path d="M101 473h110m-37 12h138m85-10h70m-24 22h95M35 497h99"/></g>
+          <g transform="translate(346 470)" fill="#3c554b"><path d="M-26 0Q0 13 31-1Z"/><path d="M0-28h2v29H0Z"/><path d="M4-27Q22-13 22-4H4Z" opacity=".8"/></g>
+          <g stroke="#5a7166" fill="none" stroke-width="1.5"><path d="M160 142q6-6 12 0q6-6 12 0m-43 16q4-4 8 0q4-4 8 0"/></g>
+        </svg>
+        <span class="landscape-caption">山静似太古 · 日长如小年</span>
+      </div>
+      <div class="hero-bottom"><span>一字一句，皆是风景</span><span>精选古诗 · 八首</span></div>
+    </section>
+
+    <section class="reading-section" aria-labelledby="reading-title">
+      <div class="wrap reading-grid">
+        <div class="section-note"><p class="eyebrow">此刻 · 读一首</p><h2 id="reading-title">心有山水，<br>何处不清欢。</h2><p>让一首诗，陪你片刻。</p><button id="random-poem" class="text-button" type="button">换一首 <span aria-hidden="true">↻</span></button></div>
+        <article class="featured-poem" aria-live="polite" aria-atomic="true">
+          <div class="poem-topline"><span id="featured-category">山水</span><span class="small-seal" aria-hidden="true">读</span></div>
+          <h3 id="featured-title">鹿柴</h3>
+          <p class="author" id="featured-author">唐 · 王维</p>
+          <div class="poem-lines" id="featured-lines"><p>空山不见人，但闻人语响。</p><p>返景入深林，复照青苔上。</p></div>
+          <p class="reading-note" id="featured-note">山林空寂，声音与夕照，让寂静有了形状。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="collection wrap" id="collection" aria-labelledby="collection-title">
+      <div class="collection-heading"><div><p class="eyebrow">字里行间 · 自有天地</p><h2 id="collection-title">小小诗集</h2></div><p>读过千年，依然心动。</p></div>
+      <div class="tools">
+        <div class="filters" role="group" aria-label="按主题筛选"><button type="button" class="filter active" data-category="全部" aria-pressed="true">全部</button><button type="button" class="filter" data-category="山水" aria-pressed="false">山水</button><button type="button" class="filter" data-category="月夜" aria-pressed="false">月夜</button><button type="button" class="filter" data-category="四时" aria-pressed="false">四时</button><button type="button" class="filter" data-category="寄情" aria-pressed="false">寄情</button></div>
+        <label class="search"><span aria-hidden="true">⌕</span><span class="sr-only">搜索诗名、诗人或诗句</span><input id="search" type="search" placeholder="搜诗名、诗人、诗句" autocomplete="off"></label>
+      </div>
+      <p class="result-count" id="result-count" aria-live="polite">共 8 首</p>
+      <div class="poem-grid" id="poem-grid"></div>
+      <p id="empty-state" class="empty-state" hidden>暂时没有找到这首诗。试试其他字词，或切换到“全部”。</p>
+      <noscript><p>开启 JavaScript 即可浏览完整诗集、搜索诗句和切换阅读。上方的《鹿柴》可直接阅读。</p></noscript>
+    </section>
+    <section class="closing wrap"><span class="small-seal" aria-hidden="true">闲</span><p>生活有时很快，<br>读诗可以很慢。</p><a href="#hero-title">回到页首 ↑</a></section>
+  </main>
+  <footer class="wrap"><span>一页诗 <span class="footer-dot">·</span> 与古诗相逢</span><span>经典诗文，自在阅读</span></footer>
+</body>
+</html>
